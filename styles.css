@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   background-color: rgb(244, 244, 244);
-  padding: 10px;
 }
 
 .navbar ul {
@@ -13,19 +12,26 @@
 }
 
 .navbar li {
-  margin-right: 20px; /* Add a unit (e.g., pixels) */
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin-right: 20px; 
 }
 
-.navbar a {
+.navbar a span{
+  display: inline-block;
+  padding: 10px 10px;
   text-decoration: none;
   color: #333;
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 18px;
   position: relative;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+.navbar a:hover span {
+  color:white;
+  background-color: #333;
+}
+
+.navbar a:active span {
+  opacity: 0.7;
 }
 
 body {
@@ -37,16 +43,10 @@ body {
 .container {
   max-width: 800px;
   margin: 20px auto;
-  overflow: hidden;
   display: flex;
-  align-items: center; /* Center items vertically */
+  align-items: center;
   justify-content: center;
   align-items: end;
-}
-
-.image {
-  flex: 0 0 auto;
-  margin-right: 20px;
 }
 
 .description {
@@ -54,16 +54,16 @@ body {
   padding-left:23px;
 }
 
-/* Additional styling */
 h2 {
   color: #333;
-  margin: 1; /* Remove default margin to align with the container */
+  margin: 1; 
   text-align: center;
 }
 
 p {
   color: #555;
-  margin: 0.5; /* Remove default margin to align with the container */
+  margin: 0.5; 
+  line-height: 20px;
 }
 
 a {
@@ -78,11 +78,10 @@ a:hover {
 .publications {
   max-width: 800px;
   margin: 20px auto;
-  overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
-  text-align: left; /* Align text within .publications container to the left */
+  text-align: left; 
 }
 
 .publications h2 {
@@ -93,12 +92,10 @@ a:hover {
 .publications ul {
   list-style-type: none;
   padding: 0;
+  line-height: 20px;
 }
 
-.publications li {
-  color: #555;
-  margin-bottom: 10px;
-}
+
 img[alt="LinkedIn"]{
   padding-left: 10px;
   cursor: pointer;
@@ -110,12 +107,12 @@ img[alt="LinkedIn"]{
 .linkedin-logo img {
   height: 30px;
   width: 30px;
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transitions for scale and color changes */
+  transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 .github-logo img:hover,
 .linkedin-logo img:hover {
-  transform: scale(1.1); /* Scale the image by 10% on hover */
+  transform: scale(1.1);
 }
 
   
