@@ -1,32 +1,43 @@
 .navbar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
   justify-content: space-around;
   background-color: rgb(244, 244, 244);
 }
 
 .navbar ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 .navbar li {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
-.navbar a span{
+.navbar a {
+  display: block;
+}
+
+.navbar a span {
   display: inline-block;
   padding: 10px 10px;
   text-decoration: none;
   color: #333;
   font-size: 18px;
   position: relative;
+  -webkit-transition: -webkit-background-color 0.3s, -webkit-color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover span {
-  color:white;
+  color: white;
   background-color: #333;
 }
 
@@ -46,23 +57,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-items: end;
 }
 
 .description {
   text-align: left;
-  padding-left:23px;
+  padding-left: 23px;
 }
 
 h2 {
   color: #333;
-  margin: 1; 
+  margin: 1;
   text-align: center;
 }
 
 p {
   color: #555;
-  margin: 0.5; 
+  margin: 0.5;
   line-height: 20px;
 }
 
@@ -75,13 +85,15 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Publications Styles */
+
 .publications {
   max-width: 800px;
   margin: 20px auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  text-align: left; 
+  text-align: left;
 }
 
 .publications h2 {
@@ -95,35 +107,38 @@ a:hover {
   line-height: 20px;
 }
 
-
-img[alt="LinkedIn"]{
+img[alt="LinkedIn"] {
   padding-left: 10px;
   cursor: pointer;
 }
-.links{
+
+.links {
   text-align: center;
 }
+
 .github-logo img,
 .linkedin-logo img {
-  height: 30px;
   width: 30px;
-  transition: transform 0.3s ease, filter 0.3s ease; 
+  height: 30px;
+  -webkit-transition: -webkit-transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .github-logo img:hover,
 .linkedin-logo img:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-/* Projects styles
+/* Projects Styles */
 
-*/
-.project-heading{
+.project-heading {
   font-family: Arial;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .project-container {
   max-width: 800px;
   margin: 10px auto;
@@ -151,7 +166,7 @@ img[alt="LinkedIn"]{
   text-align: justify;
 }
 
-.citation-text{
+.citation-text {
   margin-left: 40px;
   margin-top: 0px;
   margin-bottom: 0px;
