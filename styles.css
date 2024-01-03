@@ -115,4 +115,46 @@ img[alt="LinkedIn"]{
   transform: scale(1.1);
 }
 
-  
+/* Projects styles
+
+*/
+.project-heading{
+  font-family: Arial;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.project-container {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.ViT-Transformer {
+  display: flex;
+  align-items: center;
+}
+
+#ViT-Image {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.project-details {
+  flex-grow: 1;
+}
+
+.project-title {
+  margin-bottom: 10px;
+}
+
+.ViT-project-description {
+  text-align: justify;
+}
+
+.citation-text{
+  margin-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Arial;
+  font-size: 10px;
+}
