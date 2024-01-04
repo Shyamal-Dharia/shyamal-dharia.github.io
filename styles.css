@@ -77,10 +77,10 @@ body {
 h2 {
   color: #333;
   margin: 1;
-  text-align: center;
 }
 
 p {
+  
   color: #555;
   margin: 0.5;
   line-height: 20px;
@@ -97,24 +97,38 @@ a:hover {
 
 /* Publications Styles */
 
-.publications {
+.publication-container {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 10px auto;
+  
+}
+.publication-heading{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.publication-heading h2{
+  color: #333;
+  font-family: Arial;
+  text-align: center;
+}
+
+.publication {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  text-align: left;
 }
 
-.publications h2 {
+
+.pub-image img{
+  width: 250px;
+  margin-right: 20px;
+}
+
+.pub-title a{
   color: #333;
-  margin: 0;
 }
-
-.publications ul {
-  list-style-type: none;
-  padding: 0;
-  line-height: 20px;
+.pub-citation{
+  color: #333;
+  font-size: 12px;
 }
 
 img[alt="LinkedIn"] {
@@ -142,12 +156,14 @@ img[alt="LinkedIn"] {
 
 /* Projects Styles */
 
-.project-heading {
+.project-heading{
+  margin-top: 50px;
+}
+
+.project-heading h2{
   color: #333;
   font-family: Arial;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .project-container {
@@ -155,12 +171,12 @@ img[alt="LinkedIn"] {
   margin: 10px auto;
 }
 
-.ViT-Transformer {
+.project {
   display: flex;
   align-items: center;
 }
 
-.ViT-Image img{
+.project-image img{
   width: 300px;
   margin-right: 20px;
 }
@@ -174,7 +190,7 @@ img[alt="LinkedIn"] {
   color: #333;
 }
 
-.ViT-project-description {
+.project-description {
   display: inline;
   text-align: justify;
 }
