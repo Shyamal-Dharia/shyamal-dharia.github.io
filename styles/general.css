@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+  line-height: 20px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img[alt="LinkedIn"] {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.links {
+  text-align: center;
+}
+
+.github-logo img,
+.linkedin-logo img {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: -webkit-transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.github-logo img:hover,
+.linkedin-logo img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

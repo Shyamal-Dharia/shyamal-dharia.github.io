@@ -1,0 +1,47 @@
+.project-heading{
+  margin-top: 50px;
+}
+
+.project-heading h2{
+  color: #333;
+  font-family: Arial;
+  text-align: center;
+}
+
+.project-container {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+}
+
+.project-image img{
+  width: 300px;
+  margin-right: 20px;
+}
+
+.project-title{
+  display: block;
+
+
+}
+.project-title a{
+  color: #333;
+}
+
+.project-description {
+  display: inline;
+  text-align: justify;
+}
+
+.citation-text p{
+  width: 300px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Arial;
+  font-size: 10px;
+  text-align: center;
+}
