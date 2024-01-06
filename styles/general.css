@@ -1,8 +1,23 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 40px;
+
 }
+
+.full-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 900px;
+  height: auto;
+  margin: auto;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); /* Add box shadow here */
+  padding-top: 20px;
+}
+
+
 
 h2 {
   color: #333;

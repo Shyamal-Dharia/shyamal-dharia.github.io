@@ -2,18 +2,28 @@
 /* Publications Styles */
 
 .publication-container {
-  max-width: 800px;
-  margin: 10px auto;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 900px;
+  height: auto;
+  margin: auto;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); /* Add box shadow here */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 .publication-heading{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .publication-heading h2{
   color: #333;
   font-family: Arial;
   text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
 }
 
 .publication {

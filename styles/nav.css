@@ -5,6 +5,11 @@
   -ms-justify-content: space-around;
   justify-content: space-around;
   background-color: rgb(244, 244, 244);
+  opacity: 0.95;
+  position:fixed;
+  top: 0;
+  left:0 ;
+  right:0 ;
 }
 
 .navbar ul {
@@ -13,7 +18,6 @@
   display: flex;
   list-style-type: none;
   margin: 0;
-  padding: 0px;
 }
 
 .navbar a {

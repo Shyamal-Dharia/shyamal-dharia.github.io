@@ -9,12 +9,13 @@
 }
 
 .project-container {
-  max-width: 800px;
+  max-width: 850px;
   margin: 10px auto;
 }
 
 .project {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -33,8 +34,10 @@
 }
 
 .project-description {
-  display: inline;
-  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  
 }
 
 .citation-text p{
