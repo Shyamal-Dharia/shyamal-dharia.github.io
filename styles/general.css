@@ -1,7 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 40px 40px 40px 40px;
 }
 
 .full-container {
@@ -13,7 +11,6 @@ body {
   height: auto;
   margin: auto;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); /* Add box shadow here */
-  padding-top: 20px;
 }
 
 h2 {
@@ -61,5 +58,55 @@ img[alt="email"]
   transform: scale(1.2);
 }
 
+.cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cv-button:hover {
+  background-color: #858585;
+}
+
+.profile-picture{
+  vertical-align: top;
+  padding-top: 50px;
+}
 
 
+.profile-picture img {
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  margin: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.description-container {
+  max-width: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.description {
+  padding-left: 23px;
+}
+.description h2{
+  text-align: center;
+
+}
